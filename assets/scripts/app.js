@@ -1,7 +1,6 @@
 console.log("JS connected");
 
-mapboxgl.accessToken =
-  "pk.eyJ1Ijoid2FsZWVkcmVobWFuIiwiYSI6ImNrY3Z0ZGdncjA3aHIyeGxsdGd0OXM1cGcifQ.hStOJ9cbMFVmLpg7rrjcRw";
+mapboxgl.accessToken = process.env.API_KEY;
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
